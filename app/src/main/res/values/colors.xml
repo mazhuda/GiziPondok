@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#2cc0ce</color>
+    <color name="material_grey_300">#e0e0e0</color>
+    <color name="material_purple_500">#8f3e97</color>
+    <color name="material_purple_600">#853a96</color>
+    <color name="material_grey_800">#424242</color>
+    <color name="material_grey_200">#eeeeee</color>
+    <color name="colorFont">#ffca1b27</color>
+</resources>
