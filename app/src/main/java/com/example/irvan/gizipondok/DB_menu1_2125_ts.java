@@ -71,16 +71,39 @@ public class DB_menu1_2125_ts {
             db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('8', '', 'BUAH SALAK', 'Salak', '2 buah sedang', '65', '50', '0', '0', '12');");
             db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('9', '', 'AIR MINERAL', 'Air mineral', '1 gelas', '200 ml', '0', '0', '0', '0');");
             db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('10', '', '', '', '', '', '562,5', '19', '15', '84');");
-            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('11', '09.00', 'NASI', 'Nasi Putih', '1,5 Centong Datar', '150', '262,5', '6', '0', '60');");
-            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('12', '', 'PEPES IKAN', 'Ikan', '1 potong sedang', '40', '50', '7', '2', '0');");
-            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('13', '', 'TAHU BUMBU BALADO', 'Tahu', '1 biji besar', '110', '75', '5', '3', '7');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('11', '10.00', 'ROTI BAKAR', 'Roti', '3 potong sedang', '200', '175', '4', '0', '40');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('12', '', '', 'Pisang', '1 buah', '15', '50', '0', '0', '12');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('13', '', '', 'Gula', '1 sendok makan', '13', '50', '0', '0', '12');");
             db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('14', '', '', 'Minyak', '1 sendok teh', '5', '50', '0', '5', '0');");
-            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('15', '', 'SAYUR LODEH', 'Terong', '1/2 gelas', '50', '12,5', '0,5', '0', '2,5');");
-            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('16', '', '', 'Kacang panjang', '1/2 gelas', '50', '12,5', '0,5', '0', '2,5');");
-            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('17', '', '', 'Santan', '1/3 gelas', '40', '50', '0', '5', '0');");
-            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('18', '', 'BUAH SALAK', 'Salak', '2 buah sedang', '65', '50', '0', '0', '12');");
-            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('19', '', 'AIR MINERAL', 'Air mineral', '1 gelas', '200 ml', '0', '0', '0', '0');");
-            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('20', '', '', '', '', '', '562,5', '19', '15', '84');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('15', '', 'SINGKONG GORENG', 'Singkong', '1/2 buah', '60', '87,5', '2', '0', '20');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('16', '', '', 'Minyak', '1 sendok teh', '5', '50', '0', '5', '0');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('17', '', 'AIR MINERAL', 'Air mineral', '1 gelas', '200 ml', '0', '0', '0', '0');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('18', '', '', '', '', '', '462,5', '6', '10', '84');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('19', '12.30', 'NASI', 'Nasi putih', '1,5 centong datar', '150', '262,5', '6', '0', '60');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('20', '', 'TERI TEPUNG GORENG', 'Teri kering', '1 sendok makan', '15', '50', '7', '2', '0');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('21', '', '', 'Tepung', '2,5 sendok makan', '25', '87,5', '2', '0', '20');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('22', '', '', 'Minyak', '1 sendok teh', '5', '50', '0', '5', '0');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('23', '', 'TUMIS KEMBANG KOL', 'Jamur', 'Secukupnya', '', '0', '0', '0', '0');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('24', '', '', 'Kembang kol', '1 gelas', '100', '24', '1', '0', '5');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('25', '', '', 'Minyak', '1 sendok teh', '5', '50', '0', '5', '0');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('26', '', '', '', '', '', '524', '16', '12', '85');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('27', '16.00', 'RUJAK BUAH', 'Belimbing', '1/2 buah sedang', '35', '25', '0', '0', '6');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('28', '', '', 'Nanas', '1/8 buah sedang', '42,5', '25', '0', '0', '6');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('29', '', '', 'Jambu Air', '1 buah besar', '110', '50', '0', '0', '12');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('30', '', '', 'Gula merah', 'Secukupnya', '', '', '', '', '');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('31', '', 'SUSU SAPI', 'Susu sapi', '1 gelas', '200', '125', '7', '6', '10');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('32', '', '', 'Gula', '1 sendok makan', '13', '50', '0', '0', '12');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('33', '', 'AIR', 'Air', '1 gelas', '200 ml', '0', '0', '0', '0');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('34', '', '', '', '', '', '275', '7', '6', '46');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('35', '19.00', 'NASI', 'Nasi putih', '1,5 centong datar', '150', '262,5', '6', '0', '60');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('36', '', 'TELUR KUKUS', 'Telur', '1 butir', '55', '75', '7', '5', '0');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('37', '', 'SAYUR ASEM JAKARTA', 'Kacang tanah', '2 sendok makan', '15', '75', '5', '3', '7');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('38', '', '', 'Tahu', '1 biji besar', '110', '75', '5', '3', '7');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('39', '', '', 'Kacang Panjang', '1/2 gelas', '50', '12,5', '0,5', '0', '2,5');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('40', '', '', 'Labu siam', '1/2 gelas', '50', '12,5', '0,5', '0', '2,5');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('41', '', 'AIR MINERAL', 'Air mineral', '1 gelas', '200 ml', '0', '0', '0', '0');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('42', '', '', '', '', '', '512,5', '24', '11', '79');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('43', '', '', '', '', '', '2336,5', '72', '54', '378');");
         }
         //memperbarui database bila sudah ada
         @Override

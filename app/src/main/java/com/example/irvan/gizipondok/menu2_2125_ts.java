@@ -12,7 +12,6 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -53,6 +52,7 @@ public class menu2_2125_ts extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu2_2125_ts);
 //        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+<<<<<<< Updated upstream
 //
 //        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(menu2_2125_ts.this, R.array.pilih_menu, R.layout.support_simple_spinner_dropdown_item);
 //        adapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
@@ -84,6 +84,41 @@ public class menu2_2125_ts extends AppCompatActivity {
 //        });
 //
 //        setup();
+=======
+//        String nilai_menu = spinner.getSelectedItem().toString();
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(menu2_2125_ts.this, R.array.pilih_menu, R.layout.support_simple_spinner_dropdown_item);
+        adapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+            @Override
+            public void onItemSelected(AdapterView<?> arg0, View view, int position, long row_id) {
+                String pilihan = arg0.getItemAtPosition(position).toString();
+                switch(position){
+                    case 1:
+                        Intent a = new Intent(menu2_2125_ts.this, menu1_2125_ts.class);
+                        menu2_2125_ts.this.startActivity(a);
+                        break;
+                    case 2:
+                        Intent b = new Intent(menu2_2125_ts.this, menu2_2125_ts.class);
+                        menu2_2125_ts.this.startActivity(b);
+                        break;
+                }
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> arg0) {
+                // TODO Auto-generated method stub
+
+            }
+
+        });
+
+        setup();
+>>>>>>> Stashed changes
     }
 
 
@@ -91,7 +126,7 @@ public class menu2_2125_ts extends AppCompatActivity {
     public void setup() {
         dm2 = new DB_menu2_2125_ts(this);
         //listview = (ListView) rootView.findViewById(R.id.listSensor);
-        rvSensor = (RecyclerView) findViewById(R.id.RecyclerView_Sensor_dht);
+        rvSensor = (RecyclerView) findViewById(R.id.RecyclerView_Sensor_dht1);
         mListSensor = new ArrayList<>();
         //passing to adapter
         mSensorAdapter = new RecyclerAdapterDetailSensorDHT(mListSensor, getApplication());

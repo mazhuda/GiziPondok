@@ -33,7 +33,7 @@
             android:theme="@style/AppTheme.ActionBar" />
         <activity android:name=".Screenshot" />
         <activity
-            android:name=".menu_2125_ts"
+            android:name=".menu1_2125_ts"
             android:screenOrientation="landscape" />
         <activity
             android:name=".menu2_2125_ts"
