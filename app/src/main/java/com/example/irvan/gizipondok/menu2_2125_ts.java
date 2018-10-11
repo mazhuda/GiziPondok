@@ -1,8 +1,5 @@
 package com.example.irvan.gizipondok;
 
-/**
- * Created by hellraizer on 06/10/2018.
- */
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -18,6 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.irvan.gizipondok.Adapter.RecyclerAdapterDetailSensorDHT;
 import com.example.irvan.gizipondok.Modal.ModelDataSensorDHT;
@@ -25,8 +23,7 @@ import com.example.irvan.gizipondok.Modal.ModelDataSensorDHT;
 import java.util.ArrayList;
 import java.util.List;
 
-public class menu2_2125_ts extends AppCompatActivity {
-    private Toolbar toolbar;
+public class menu2_2125_ts extends AppCompatActivity implements OnItemSelectedListener {
     ListView listview;
     //static DB_menu1_2125_ts dm;
     static DB_menu2_2125_ts dm2;
@@ -34,15 +31,8 @@ public class menu2_2125_ts extends AppCompatActivity {
     LinearLayout layout_loading;
     TextView text_load;
     ImageView icon_load;
-    String ID_USER;
-    //SharedPreferences sharedpreferences;
-    View rootView;
 
     Spinner spinner;
-    //    String[] SPINNERVALUES = {"Menu 1","Menu 2","Menu 3"};
-//    String SpinnerValue;
-//    Intent intent;
-    Intent intent;
     private RecyclerView rvSensor;
     private List<ModelDataSensorDHT> mListSensor;
     private RecyclerAdapterDetailSensorDHT mSensorAdapter;
@@ -51,6 +41,7 @@ public class menu2_2125_ts extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu2_2125_ts);
+<<<<<<< Updated upstream
 //        Spinner spinner = (Spinner) findViewById(R.id.spinner);
 //
 //        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(menu2_2125_ts.this, R.array.pilih_menu, R.layout.support_simple_spinner_dropdown_item);
@@ -116,6 +107,15 @@ public class menu2_2125_ts extends AppCompatActivity {
         });
 
         setup();
+=======
+
+        spinner = (Spinner) findViewById(R.id.spinner2);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.pilih_menu, R.layout.support_simple_spinner_dropdown_item);
+        adapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+        spinner.setOnItemSelectedListener(this);
+
+>>>>>>> Stashed changes
     }
 
 
@@ -153,5 +153,24 @@ public class menu2_2125_ts extends AppCompatActivity {
         rvSensor.setVisibility(View.VISIBLE);
         mSensorAdapter = new RecyclerAdapterDetailSensorDHT (mListSensor,getApplication ());
         rvSensor.setAdapter(mSensorAdapter);
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+        final Intent intent;
+        switch (i){
+            case 0:
+                intent = new Intent(menu2_2125_ts.this, menu_2125_ts.class);
+                startActivity(intent);
+                break;
+            case 1:
+                Toast.makeText(menu2_2125_ts.this,"Menu Utama",Toast.LENGTH_LONG).show();
+                break;
+        }
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
+
     }
 }
