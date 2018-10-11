@@ -35,6 +35,9 @@
         <activity
             android:name=".menu_2125_ts"
             android:screenOrientation="landscape" />
+        <activity
+            android:name=".menu2_2125_ts"
+            android:screenOrientation="landscape"/>
     </application>
 
 </manifest>

@@ -29,7 +29,7 @@ import java.util.List;
 public class menu2_2125_ts extends AppCompatActivity {
     private Toolbar toolbar;
     ListView listview;
-    static DB_menu1_2125_ts dm;
+    //static DB_menu1_2125_ts dm;
     static DB_menu2_2125_ts dm2;
 
     LinearLayout layout_loading;
@@ -51,41 +51,39 @@ public class menu2_2125_ts extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_2125_ts);
+        setContentView(R.layout.activity_menu2_2125_ts);
 //        Spinner spinner = (Spinner) findViewById(R.id.spinner);
-//        String nilai_menu = spinner.getSelectedItem().toString();
-        Spinner spinner = (Spinner) findViewById(R.id.spinner);
-
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(menu2_2125_ts.this, R.array.pilih_menu, R.layout.support_simple_spinner_dropdown_item);
-        adapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-
-            @Override
-            public void onItemSelected(AdapterView<?> arg0, View view, int position, long row_id) {
-                String pilihan = arg0.getItemAtPosition(position).toString();
-                switch(position){
-                    case 1:
-                        Intent a = new Intent(menu2_2125_ts.this, menu_2125_ts.class);
-                        menu2_2125_ts.this.startActivity(a);
-                        break;
-                    case 2:
-                        Intent b = new Intent(menu2_2125_ts.this, menu2_2125_ts.class);
-                        menu2_2125_ts.this.startActivity(b);
-                        break;
-                }
-
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> arg0) {
-                // TODO Auto-generated method stub
-
-            }
-
-        });
-
-        setup();
+//
+//        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(menu2_2125_ts.this, R.array.pilih_menu, R.layout.support_simple_spinner_dropdown_item);
+//        adapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
+//        spinner.setAdapter(adapter);
+//        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//
+//            @Override
+//            public void onItemSelected(AdapterView<?> arg0, View view, int position, long row_id) {
+//                String pilihan = arg0.getItemAtPosition(position).toString();
+//                switch(position){
+//                    case 1:
+//                        Intent a = new Intent(menu2_2125_ts.this, menu_2125_ts.class);
+//                        menu2_2125_ts.this.startActivity(a);
+//                        break;
+//                    case 2:
+//                        Intent b = new Intent(menu2_2125_ts.this, menu2_2125_ts.class);
+//                        menu2_2125_ts.this.startActivity(b);
+//                        break;
+//                }
+//
+//            }
+//
+//            @Override
+//            public void onNothingSelected(AdapterView<?> arg0) {
+//                // TODO Auto-generated method stub
+//
+//            }
+//
+//        });
+//
+//        setup();
     }
 
 

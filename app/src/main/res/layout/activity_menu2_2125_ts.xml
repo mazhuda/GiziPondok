@@ -6,25 +6,25 @@
     tools:context=".menu_2125_ts"
     android:orientation="vertical">
 
-            <Spinner
-                android:id="@+id/spinner"
-                android:layout_width="match_parent"
-                android:layout_height="44dp"
-                android:spinnerMode="dropdown"
-                android:entries="@array/pilih_menu"/>
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:spinnerMode="dropdown"
+        android:entries="@array/pilih_menu"/>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
+        <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -34,7 +34,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="#4174d4"
+                        android:background="#41d457"
                         android:gravity="center"
                         android:text="Menu Makan Pagi"
                         android:textColor="@android:color/white"
@@ -135,145 +135,117 @@
 
                 </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:orientation="vertical" >
-
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:orientation="vertical" >
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="#4174d4"
-                        android:gravity="center"
-                        android:text="Menu Makan Selingan"
-                        android:textColor="@android:color/white"
-                        android:textSize="17dp" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
 
-                    <TableLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="5dp"
-                        android:background="#41c5d4">
-
-                        <TableRow
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            >
+                            android:background="#70bf81"
+                            android:gravity="center"
+                            android:text="Menu Makan Selingan"
+                            android:textColor="@android:color/white"
+                            android:textSize="17dp" />
 
-                            <TextView
-                                android:layout_width="100dp"
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:background="#41c5d4">
+
+                            <TableRow
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentStart="true"
-                                android:layout_alignParentTop="true"
-                                android:text="Waktu  " />
+                                >
 
-                            <TextView
-                                android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:layout_alignBaseline="@+id/textView4"
-                                android:layout_alignBottom="@+id/textView4"
-                                android:text="Menu  " />
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:text="Waktu  " />
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignBaseline="@+id/textView4"
+                                    android:layout_alignBottom="@+id/textView4"
+                                    android:text="Menu  " />
 
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignTop="@+id/textView6"
-                                android:layout_alignParentEnd="true"
-                                android:text="Bahan Makanan  " />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignTop="@+id/textView6"
+                                    android:layout_alignParentEnd="true"
+                                    android:text="Bahan Makanan  " />
 
-                            <TextView
-                                android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:layout_alignTop="@+id/textView6"
-                                android:layout_alignParentEnd="true"
-                                android:text="Ukuran Rumah Tangga" />
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignTop="@+id/textView6"
+                                    android:layout_alignParentEnd="true"
+                                    android:text="Ukuran Rumah Tangga" />
 
-                            <TextView
-                                android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:layout_alignTop="@+id/textView6"
-                                android:layout_alignParentEnd="true"
-                                android:text="Berat" />
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignTop="@+id/textView6"
+                                    android:layout_alignParentEnd="true"
+                                    android:text="Berat" />
 
-                            <TextView
-                                android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:layout_alignTop="@+id/textView6"
-                                android:layout_alignParentEnd="true"
-                                android:text="Energi  " />
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignTop="@+id/textView6"
+                                    android:layout_alignParentEnd="true"
+                                    android:text="Energi  " />
 
-                            <TextView
-                                android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:layout_alignTop="@+id/textView6"
-                                android:layout_alignParentEnd="true"
-                                android:text="Protein  " />
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignTop="@+id/textView6"
+                                    android:layout_alignParentEnd="true"
+                                    android:text="Protein  " />
 
-                            <TextView
-                                android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:layout_alignTop="@+id/textView6"
-                                android:layout_alignParentEnd="true"
-                                android:text="Lemak  " />
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignTop="@+id/textView6"
+                                    android:layout_alignParentEnd="true"
+                                    android:text="Lemak  " />
 
-                            <TextView
-                                android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:layout_alignTop="@+id/textView6"
-                                android:layout_alignParentEnd="true"
-                                android:text="Karbohidrat" />
-                        </TableRow>
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignTop="@+id/textView6"
+                                    android:layout_alignParentEnd="true"
+                                    android:text="Karbohidrat" />
+                            </TableRow>
 
-                    </TableLayout>
+                        </TableLayout>
 
-                    <android.support.v7.widget.RecyclerView
-                        android:id="@+id/RecyclerView_Sensor_dht2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-                    </android.support.v7.widget.RecyclerView>
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/RecyclerView_Sensor_dht2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        </android.support.v7.widget.RecyclerView>
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
-
             </LinearLayout>
 
-
-        </LinearLayout>
-
-
-    </HorizontalScrollView>
+        </HorizontalScrollView>
     </ScrollView>
 
-    <!--</LinearLayout>-->
-
-    <!--</LinearLayout>-->
-
-    <!---->
-        <!--</HorizontalScrollView>-->
-    <!--</ScrollView>-->
-
-    <!--<LinearLayout-->
-        <!--android:orientation="horizontal"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent">-->
-
-    <!--</LinearLayout>-->
-
-    <!--<ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/listSensor"
-        android:padding="6dp"
-        android:clipToPadding="false"
-        android:scrollbars="none"
-        android:visibility="gone"/>-->
-
-    <!--<include layout="@layout/loading_and_result"/>-->
 </LinearLayout>
