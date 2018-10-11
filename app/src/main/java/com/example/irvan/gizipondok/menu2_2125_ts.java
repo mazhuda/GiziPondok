@@ -52,7 +52,6 @@ public class menu2_2125_ts extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu2_2125_ts);
 //        Spinner spinner = (Spinner) findViewById(R.id.spinner);
-<<<<<<< Updated upstream
 //
 //        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(menu2_2125_ts.this, R.array.pilih_menu, R.layout.support_simple_spinner_dropdown_item);
 //        adapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
@@ -84,7 +83,6 @@ public class menu2_2125_ts extends AppCompatActivity {
 //        });
 //
 //        setup();
-=======
 //        String nilai_menu = spinner.getSelectedItem().toString();
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
 
@@ -118,7 +116,6 @@ public class menu2_2125_ts extends AppCompatActivity {
         });
 
         setup();
->>>>>>> Stashed changes
     }
 
 
