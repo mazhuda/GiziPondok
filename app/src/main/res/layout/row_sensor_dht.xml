@@ -8,12 +8,14 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp">
+        >
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#41c5d4">
+            android:background="#41c5d4"
+            >
+            <!---->
 
             <!--<TextView-->
             <!--android:id="@+id/Id"-->
@@ -31,124 +33,111 @@
 
             <TextView
                 android:id="@+id/Waktu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="0.5dp"
-                android:layout_marginBottom="0.5dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:padding="5dp"
                 android:text="2"
                 android:textColor="@android:color/black"
-
-                android:textSize="14dp" />
+                android:textSize="14dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginBottom="0.5dp"/>
 
             <TextView
                 android:id="@+id/Menu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="0.5dp"
-                android:layout_marginBottom="0.5dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:padding="5dp"
                 android:text="3"
                 android:textColor="@android:color/black"
-                android:textSize="14dp" />
+                android:textSize="14dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginBottom="0.5dp" />
 
             <TextView
                 android:id="@+id/Bahan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="0.5dp"
-                android:layout_marginBottom="0.5dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:padding="5dp"
                 android:text="4"
                 android:textColor="@android:color/black"
-                android:textSize="14dp" />
+                android:textSize="14dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginBottom="0.5dp" />
 
             <TextView
                 android:id="@+id/Urt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="0.5dp"
-                android:layout_marginBottom="0.5dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:padding="5dp"
                 android:text="5"
                 android:textColor="@android:color/black"
-                android:textSize="14dp" />
+                android:textSize="14dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginBottom="0.5dp" />
 
             <TextView
                 android:id="@+id/Berat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="0.5dp"
-                android:layout_marginBottom="0.5dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:padding="5dp"
                 android:text="6"
-
                 android:textColor="@android:color/black"
-                android:textSize="14dp" />
+                android:textSize="14dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginBottom="0.5dp"/>
 
             <TextView
                 android:id="@+id/Energi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="0.5dp"
-                android:layout_marginBottom="0.5dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:padding="5dp"
                 android:text="7"
                 android:textColor="@android:color/black"
-                android:textSize="14dp" />
+                android:textSize="14dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginBottom="0.5dp" />
 
             <TextView
                 android:id="@+id/Protein"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="0.5dp"
-                android:layout_marginBottom="0.5dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:padding="5dp"
                 android:text="8"
                 android:textColor="@android:color/black"
-                android:textSize="14dp" />
+                android:textSize="14dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginBottom="0.5dp" />
 
             <TextView
                 android:id="@+id/Lemak"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="0.5dp"
-                android:layout_marginBottom="0.5dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:padding="5dp"
                 android:text="9"
-
                 android:textColor="@android:color/black"
-                android:textSize="14dp" />
+                android:textSize="14dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginBottom="0.5dp" />
 
             <TextView
                 android:id="@+id/Karbohidrat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="0.5dp"
-                android:layout_marginBottom="0.5dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:padding="5dp"
                 android:text="10"
                 android:textColor="@android:color/black"
-                android:textSize="14dp" />
-
+                android:textSize="14dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginBottom="0.5dp" />
         </TableRow>
 
 </TableLayout>

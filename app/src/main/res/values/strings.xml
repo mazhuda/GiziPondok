@@ -78,9 +78,9 @@
     <string name="material_icon_cloud_univ_second">&#xeb5a;</string>
     <string name="material_icon_cloud_univ_third">&#xeb55;</string>
     <string-array name="pilih_menu">
-        <item>Menu_1</item>
-        <item>Menu_2</item>
-        <item>Menu_3</item>
-        <item>Menu_4</item>
+        <item>Menu 1</item>
+        <item>Menu 2</item>
+        <item>Menu 3</item>
+        <item>Menu 4</item>
     </string-array>
 </resources>

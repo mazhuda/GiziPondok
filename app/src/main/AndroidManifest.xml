@@ -47,6 +47,15 @@
                 android:value=".menu_2125_ts" />
         </activity>
         <activity
+            android:name=".menu2_2125_ts"
+            android:label="Menu Makan 2125 kkal"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.ActionBar" >
+            <!--<meta-data-->
+                <!--android:name="android.support.PARENT_ACTIVITY"-->
+                <!--android:value=".menu_2125_ts" />-->
+        </activity>
+        <activity
             android:name=".cetak"
             android:label="Cetak"
             android:theme="@style/AppTheme.ActionBar" >
