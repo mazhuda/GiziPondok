@@ -66,10 +66,12 @@ public class menu2_2125_ts extends AppCompatActivity {
                 String pilihan = arg0.getItemAtPosition(position).toString();
                 switch(position){
                     case 1:
-                        intent = new Intent(menu2_2125_ts.this, menu_2125_ts.class);
+                        Intent a = new Intent(menu2_2125_ts.this, menu_2125_ts.class);
+                        menu2_2125_ts.this.startActivity(a);
                         break;
                     case 2:
-                        intent = new Intent(menu2_2125_ts.this, menu2_2125_ts.class);
+                        Intent b = new Intent(menu2_2125_ts.this, menu2_2125_ts.class);
+                        menu2_2125_ts.this.startActivity(b);
                         break;
                 }
 

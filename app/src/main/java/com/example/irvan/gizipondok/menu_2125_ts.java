@@ -55,24 +55,25 @@ Intent intent;
         setContentView(R.layout.activity_menu_2125_ts);
 //        Spinner spinner = (Spinner) findViewById(R.id.spinner);
 //        String nilai_menu = spinner.getSelectedItem().toString();
-        final Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(menu_2125_ts.this, R.array.pilih_menu, R.layout.support_simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
             @Override
             public void onItemSelected(AdapterView<?> arg0, View view, int position, long row_id) {
                 String pilihan = arg0.getItemAtPosition(position).toString();
                 switch(position){
                     case 1:
                         Intent a = new Intent(menu_2125_ts.this, menu_2125_ts.class);
-                        startActivity(a);
+                        menu_2125_ts.this.startActivity(a);
                         Toast.makeText(menu_2125_ts.this, "menu1",Toast.LENGTH_LONG).show();
                         break;
                     case 2:
                         Intent b = new Intent(menu_2125_ts.this, menu2_2125_ts.class);
-                        startActivity(b);
+                        menu_2125_ts.this.startActivity(b);
                         break;
                 }
 
