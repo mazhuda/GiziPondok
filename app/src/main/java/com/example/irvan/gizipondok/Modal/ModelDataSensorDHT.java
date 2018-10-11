@@ -49,9 +49,7 @@ public class ModelDataSensorDHT {
     @Expose
     private String karbohidrat;
 
-//    public static final String id_user = "ID_USER";
-//    public static final String nama_mahasiswa = "ID_MAHASISWA";
-//    public static final String jenis_mahasiswa = "ID_MAHASISWA";
+
 
     public ModelDataSensorDHT(String waktu, String menu, String bahan, String urt, String berat, String energi, String protein, String lemak, String karbohidrat) {
 //        this.id = id;

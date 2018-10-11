@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.irvan.gizipondok">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
@@ -24,46 +22,23 @@
         <activity
             android:name=".Perhitungan"
             android:label="Perhitungan"
-            android:theme="@style/AppTheme.ActionBar" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".menu_utama" />
-        </activity>
+            android:theme="@style/AppTheme.ActionBar" />
         <activity
             android:name=".Menu_makan"
-            android:label="Menu Makan"
-            android:theme="@style/AppTheme.ActionBar" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".menu_utama" />
-        </activity>
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".coba"
+            android:label="Panduan"
+            android:theme="@style/AppTheme.ActionBar" />
+        <activity
+            android:name=".cobbaa"
+            android:label="Panduan"
+            android:theme="@style/AppTheme.ActionBar" />
+        <activity android:name=".Screenshot" />
         <activity
             android:name=".menu_2125_ts"
-            android:label="Menu Makan 2125 kkal"
-            android:screenOrientation="landscape"
-            android:theme="@style/AppTheme.ActionBar" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".menu_2125_ts" />
-        </activity>
-        <activity
-            android:name=".menu2_2125_ts"
-            android:label="Menu Makan 2125 kkal"
-            android:screenOrientation="landscape"
-            android:theme="@style/AppTheme.ActionBar" >
-            <!--<meta-data-->
-                <!--android:name="android.support.PARENT_ACTIVITY"-->
-                <!--android:value=".menu_2125_ts" />-->
-        </activity>
-        <activity
-            android:name=".cetak"
-            android:label="Cetak"
-            android:theme="@style/AppTheme.ActionBar" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".menu_utama" />
-        </activity>
-
+            android:screenOrientation="landscape" />
     </application>
 
 </manifest>

@@ -1,0 +1,2827 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.irvan.gizipondok.cobbaa">
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Ss"
+        android:text="TakeScreenShot And Save"/>
+
+    <ScrollView
+        android:layout_below="@+id/Ss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_linear"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Menu Makan Pagi"
+                        android:gravity="center"
+                        android:background="#4174d4"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp"/>
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        >
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:background="#4174d4">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:width="150dp"
+                                android:textColor="@android:color/black"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Menu Makan"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:width="130dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text=" Bahan Makan"
+                                android:textSize="14dp"
+                                android:textColor="@android:color/black"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:width="90dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text=" Ukuran "
+                                android:textColor="@android:color/black"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:layout_marginBottom="0.4dp"
+                                android:width="70dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text=" Berat (g) "
+                                android:textColor="@android:color/black"
+                                android:textSize="14dp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#4174d4">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Roti Bakar Madu"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Roti"
+                                android:textSize="14dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="3 slice"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="70"
+                                android:textSize="14dp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#4174d4">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Madu"
+                                android:textSize="14dp"
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="1 sdm"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:layout_marginBottom="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="15"
+                                android:textSize="14dp" />
+                        </TableRow>
+
+                        <TableRow
+
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#4174d4">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Susu"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Susu"
+                                android:textSize="14dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="1 gls"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:layout_marginBottom="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="200 ml"
+                                android:textSize="14dp" />
+                        </TableRow>
+
+                        <TableRow
+
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#4174d4">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Nasi"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Nasi Putih"
+                                android:textSize="14dp"
+
+                                />
+
+                            <TextView
+
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="2 ctg"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="200"
+                                android:textSize="14dp" />
+                        </TableRow>
+
+                        <TableRow
+
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#4174d4">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Sup Sayur"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Wortel"
+                                android:textSize="14dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="1/2 gls"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="14dp" />
+                        </TableRow>
+
+                        <TableRow
+
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#4174d4">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Buncis"
+                                android:textSize="14dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="1/4 gls"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="25"
+                                android:textSize="14dp" />
+                        </TableRow>
+
+                        <TableRow
+
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#4174d4">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Kol"
+                                android:textSize="14dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="1/4 gls"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:layout_marginBottom="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="25"
+                                android:textSize="14dp" />
+                        </TableRow>
+
+                        <TableRow
+
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#4174d4">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Ayam Panggang"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Daging ayam tanpa kulit"
+                                android:textSize="14dp"
+
+                                />
+
+                            <TextView
+
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="1,5 ptg"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:layout_marginBottom="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="60"
+                                android:textSize="14dp" />
+                        </TableRow>
+
+                        <TableRow
+
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#4174d4">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Buah Potong"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Melon"
+                                android:textSize="14dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="1/4 ptg"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:layout_marginBottom="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="47,5"
+                                android:textSize="14dp" />
+                        </TableRow>
+
+                        <TableRow
+
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#4174d4">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Jus Semangka"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Semangka"
+                                android:textSize="14dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="1/4 ptg"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="47,5"
+                                android:textSize="14dp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#4174d4">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="(No Sugar)"
+                                android:padding="5dp"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Air mineral"
+                                android:textSize="14dp"
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="1/2 gls"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="100 ml"
+                                android:textSize="14dp" />
+                        </TableRow>
+                    </TableLayout>
+
+                </LinearLayout> // menu pagi
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Menu Selingan Pagi"
+                        android:textSize="17dp"
+                        android:background="#2c8e41"
+                        android:textColor="@android:color/white"
+                        android:gravity="center"/>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        >
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#2c8e41">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:width="150dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Menu Makan"
+                                android:textColor="@android:color/black"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:width="130dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text=" Bahan Makan"
+                                android:textSize="14dp"
+                                android:textColor="@android:color/black"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:width="90dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text=" Ukuran "
+                                android:textColor="@android:color/black"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:layout_marginBottom="0.4dp"
+                                android:width="70dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text=" Berat "
+                                android:textColor="@android:color/black"
+                                android:textSize="14dp" />
+
+                        </TableRow>
+
+                        <TableRow
+
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#2c8e41">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Salad Sayur"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Brokoli"
+                                android:textSize="14dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="1/2 gls"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="14dp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#2c8e41">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Ikan Tuna"
+                                android:textSize="14dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="1 ptg"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="40"
+                                android:textSize="14dp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#2c8e41">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Keju parut"
+                                android:textSize="14dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="1/2 ptg"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="17,5"
+                                android:textSize="14dp" />
+                        </TableRow><TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="#2c8e41">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="Selada, Tomat, Paprika"
+                            android:textSize="14dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="Secukupnya"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="14dp" />
+                    </TableRow>
+
+                        <TableRow
+
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#2c8e41">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Minyak Zaitun"
+                                android:textSize="14dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="1 sdt"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:layout_marginBottom="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="5 ml"
+                                android:textSize="14dp" />
+                        </TableRow>
+
+
+                    </TableLayout>
+
+                </LinearLayout> // selingan pagi
+                <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:gravity="center"
+                    android:background="#bc65c6"
+                    android:textColor="@android:color/white"
+                    android:text="Menu Makan Siang"/>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#bc65c6">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_marginBottom="0.4dp"
+                            android:layout_marginRight="0.4dp"
+                            android:width="150dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Menu Makan"
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_marginBottom="0.4dp"
+                            android:layout_marginRight="0.4dp"
+                            android:width="130dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:text=" Bahan Makan"
+                            android:textSize="14dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_marginBottom="0.4dp"
+                            android:layout_marginRight="0.4dp"
+                            android:width="90dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:text=" Ukuran "
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:layout_marginBottom="0.4dp"
+                            android:width="70dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:text=" Berat "
+                            android:textSize="14dp" />
+
+                    </TableRow>
+
+                    <TableRow
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="#bc65c6">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_marginBottom="0.4dp"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Nasi"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_marginBottom="0.4dp"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="Nasi Putih"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_marginBottom="0.4dp"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="2 ctg"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:layout_marginBottom="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="200"
+                            android:textSize="14dp" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="#bc65c6">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Tahu Telur Rebus Daging"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="Tahu"
+                            android:textSize="14dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="1 biji"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="110"
+                            android:textSize="14dp" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="#bc65c6">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text=" Sapi Bumbu Merah "
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="Telur ayam"
+                            android:textSize="14dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="1 butir"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="55"
+                            android:textSize="14dp" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="#bc65c6">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="Daging sapi"
+                            android:textSize="14dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="1 ptg"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="35"
+                            android:textSize="14dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="#bc65c6">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_marginBottom="0.4dp"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_marginBottom="0.4dp"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="Minyak"
+                            android:textSize="14dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_marginBottom="0.4dp"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="1/2 sdm"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:background="#FFFFFF"
+                            android:layout_marginBottom="0.4dp"
+                            android:gravity="center"
+                            android:text="2,5 ml"
+                            android:textSize="14dp" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="#bc65c6">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Cah Sayur"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="Kangkung"
+                            android:textSize="14dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="1 gls"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="100"
+                            android:textSize="14dp" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="#bc65c6">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="Sawi hijau"
+                            android:textSize="14dp"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="1/2 gls "
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="50"
+                            android:textSize="14dp" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="#bc65c6">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_marginBottom="0.4dp"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_marginBottom="0.4dp"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="Minyak"
+                            android:textSize="14dp"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_marginBottom="0.4dp"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="1/2 sdm"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:layout_marginBottom="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="2,5 ml"
+                            android:textSize="14dp" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout> // menu siang
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="17dp"
+                        android:gravity="center"
+                        android:background="#bc65c6"
+                        android:textColor="@android:color/white"
+                        android:text="Menu Makan Siang"/>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        >
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#bc65c6">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:width="150dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Menu Makan"
+                                android:textColor="@android:color/black"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:width="130dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:textColor="@android:color/black"
+                                android:text=" Bahan Makan"
+                                android:textSize="14dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:width="90dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:textColor="@android:color/black"
+                                android:text=" Ukuran "
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:layout_marginBottom="0.4dp"
+                                android:width="70dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:textColor="@android:color/black"
+                                android:text=" Berat "
+                                android:textSize="14dp" />
+
+                        </TableRow>
+
+                        <TableRow
+
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#bc65c6">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Nasi"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Nasi Putih"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="2 ctg"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:layout_marginBottom="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="200"
+                                android:textSize="14dp" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#bc65c6">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Tahu Telur Rebus Daging"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Tahu"
+                                android:textSize="14dp"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="1 biji"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="110"
+                                android:textSize="14dp" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#bc65c6">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text=" Sapi Bumbu Merah "
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Telur ayam"
+                                android:textSize="14dp"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="1 butir"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="55"
+                                android:textSize="14dp" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#bc65c6">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Daging sapi"
+                                android:textSize="14dp"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="1 ptg"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="35"
+                                android:textSize="14dp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#bc65c6">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Minyak"
+                                android:textSize="14dp"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="1/2 sdm"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:background="#FFFFFF"
+                                android:layout_marginBottom="0.4dp"
+                                android:gravity="center"
+                                android:text="2,5 ml"
+                                android:textSize="14dp" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#bc65c6">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Cah Sayur"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Kangkung"
+                                android:textSize="14dp"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="1 gls"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="100"
+                                android:textSize="14dp" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#bc65c6">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Sawi hijau"
+                                android:textSize="14dp"
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="1/2 gls "
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="14dp" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#bc65c6">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Minyak"
+                                android:textSize="14dp"
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="1/2 sdm"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:layout_marginBottom="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="2,5 ml"
+                                android:textSize="14dp" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout> // menu siang
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="17dp"
+                        android:gravity="center"
+                        android:background="#bc65c6"
+                        android:textColor="@android:color/white"
+                        android:text="Menu Makan Siang"/>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        >
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#bc65c6">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:width="150dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Menu Makan"
+                                android:textColor="@android:color/black"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:width="130dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:textColor="@android:color/black"
+                                android:text=" Bahan Makan"
+                                android:textSize="14dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:width="90dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:textColor="@android:color/black"
+                                android:text=" Ukuran "
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:layout_marginBottom="0.4dp"
+                                android:width="70dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:textColor="@android:color/black"
+                                android:text=" Berat "
+                                android:textSize="14dp" />
+
+                        </TableRow>
+
+                        <TableRow
+
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#bc65c6">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Nasi"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Nasi Putih"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="2 ctg"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:layout_marginBottom="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="200"
+                                android:textSize="14dp" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#bc65c6">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Tahu Telur Rebus Daging"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Tahu"
+                                android:textSize="14dp"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="1 biji"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="110"
+                                android:textSize="14dp" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#bc65c6">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text=" Sapi Bumbu Merah "
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Telur ayam"
+                                android:textSize="14dp"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="1 butir"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="55"
+                                android:textSize="14dp" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#bc65c6">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Daging sapi"
+                                android:textSize="14dp"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="1 ptg"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="35"
+                                android:textSize="14dp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#bc65c6">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Minyak"
+                                android:textSize="14dp"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="1/2 sdm"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:background="#FFFFFF"
+                                android:layout_marginBottom="0.4dp"
+                                android:gravity="center"
+                                android:text="2,5 ml"
+                                android:textSize="14dp" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#bc65c6">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Cah Sayur"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Kangkung"
+                                android:textSize="14dp"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="1 gls"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="100"
+                                android:textSize="14dp" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#bc65c6">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Sawi hijau"
+                                android:textSize="14dp"
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="1/2 gls "
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="14dp" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#bc65c6">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Minyak"
+                                android:textSize="14dp"
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="2"
+                                android:layout_marginBottom="0.4dp"
+                                android:layout_marginRight="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="1/2 sdm"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="3"
+                                android:layout_marginBottom="0.4dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:text="2,5 ml"
+                                android:textSize="14dp" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout> // menu siang
+                <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:gravity="center"
+                    android:background="#bc65c6"
+                    android:textColor="@android:color/white"
+                    android:text="Menu Makan Siang"/>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#bc65c6">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_marginBottom="0.4dp"
+                            android:layout_marginRight="0.4dp"
+                            android:width="150dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Menu Makan"
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_marginBottom="0.4dp"
+                            android:layout_marginRight="0.4dp"
+                            android:width="130dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:text=" Bahan Makan"
+                            android:textSize="14dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_marginBottom="0.4dp"
+                            android:layout_marginRight="0.4dp"
+                            android:width="90dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:text=" Ukuran "
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:layout_marginBottom="0.4dp"
+                            android:width="70dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:text=" Berat "
+                            android:textSize="14dp" />
+
+                    </TableRow>
+
+                    <TableRow
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="#bc65c6">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_marginBottom="0.4dp"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Nasi"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_marginBottom="0.4dp"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="Nasi Putih"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_marginBottom="0.4dp"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="2 ctg"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:layout_marginBottom="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="200"
+                            android:textSize="14dp" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="#bc65c6">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Tahu Telur Rebus Daging"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="Tahu"
+                            android:textSize="14dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="1 biji"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="110"
+                            android:textSize="14dp" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="#bc65c6">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text=" Sapi Bumbu Merah "
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="Telur ayam"
+                            android:textSize="14dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="1 butir"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="55"
+                            android:textSize="14dp" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="#bc65c6">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="Daging sapi"
+                            android:textSize="14dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="1 ptg"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="35"
+                            android:textSize="14dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="#bc65c6">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_marginBottom="0.4dp"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_marginBottom="0.4dp"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="Minyak"
+                            android:textSize="14dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_marginBottom="0.4dp"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="1/2 sdm"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:background="#FFFFFF"
+                            android:layout_marginBottom="0.4dp"
+                            android:gravity="center"
+                            android:text="2,5 ml"
+                            android:textSize="14dp" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="#bc65c6">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Cah Sayur"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="Kangkung"
+                            android:textSize="14dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="1 gls"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="100"
+                            android:textSize="14dp" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="#bc65c6">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="Sawi hijau"
+                            android:textSize="14dp"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="1/2 gls "
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="50"
+                            android:textSize="14dp" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="#bc65c6">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_marginBottom="0.4dp"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_marginBottom="0.4dp"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="Minyak"
+                            android:textSize="14dp"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_marginBottom="0.4dp"
+                            android:layout_marginRight="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="1/2 sdm"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:layout_marginBottom="0.4dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="2,5 ml"
+                            android:textSize="14dp" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout> // menu siang
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+</RelativeLayout>

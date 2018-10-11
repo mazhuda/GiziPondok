@@ -1,54 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
+
+
     android:background="@drawable/cob"
     tools:context=".menu_utama">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Healty Nutrition"
-        android:textSize="25dp"
-        android:textColor="#72ce7b"
-        android:textStyle="italic"
-        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Healty Nutrition"
+            android:textSize="25dp"
+            android:textColor="#72ce7b"
+            android:textStyle="italic"
+            />
 
-    <Button
-        android:id="@+id/perhitungan"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="Perhitungan"
-        android:layout_gravity="center"
-        android:layout_marginTop="25dp"
-        android:textAllCaps="false"
-        android:textSize="16dp"
-        android:theme="@style/PrimaryColoredButton"/>
-    <Button
-        android:id="@+id/menu"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="Menu Makan"
-        android:textAllCaps="false"
-        android:layout_marginTop="5dp"
-        android:layout_gravity="center"
-        android:textSize="16dp"
-        android:theme="@style/PrimaryColoredButton"/>
-    <Button
-        android:id="@+id/panduan"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="Cetak"
-        android:textAllCaps="false"
-        android:layout_gravity="center"
-        android:layout_marginTop="5dp"
-        android:textSize="16dp"
-        android:theme="@style/PrimaryColoredButton"/>
+        <Button
+            android:id="@+id/perhitungan"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Perhitungan"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:theme="@style/PrimaryColoredButton"/>
+        <Button
+            android:id="@+id/menu"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Menu Makan"
+            android:textAllCaps="false"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:theme="@style/PrimaryColoredButton"/>
+        <Button
+            android:id="@+id/panduan"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Panduan"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:textSize="16dp"
+            android:theme="@style/PrimaryColoredButton"/>
+
+    </LinearLayout>
 
 
 
-</LinearLayout>
+
+
+</FrameLayout>

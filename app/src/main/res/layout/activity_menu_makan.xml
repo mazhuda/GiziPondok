@@ -1,41 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@+id/content_main" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
-            <RelativeLayout android:layout_width="fill_parent" android:layout_height="200.0dip">
-                <ImageView android:id="@+id/img3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/az" android:scaleType="fitXY" />
-            </RelativeLayout>
-            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
-                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
-                    <android.support.v7.widget.CardView android:id="@+id/menudata" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_weight="1.2" app:cardCornerRadius="4.0dip" app:cardElevation="3.0dip">
-                        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content">
-                            <ImageView android:layout_gravity="center" android:id="@+id/card1" android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="@drawable/satu" android:scaleType="fitXY" />
-                            <TextView android:textColor="@color/colorFont" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2125 tanpa susu" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView android:id="@+id/menukonsultasi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_weight="1.2" app:cardCornerRadius="4.0dip" app:cardElevation="3.0dip">
-                        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content">
-                            <ImageView android:layout_gravity="center" android:id="@+id/card2" android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="@drawable/dua" android:scaleType="fitXY" />
-                            <TextView android:textColor="@color/colorFont" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2125 dengan susu" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                </LinearLayout>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/kkl_2900"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:text="2900 Kkl"
+                    android:textColor="@android:color/white"
+                    android:drawableTop="@mipmap/ayam"
+                    android:background="@drawable/circel_2900"
+                    android:padding="20dp"
+                    />
+
+                <Button
+                    android:id="@+id/kkl_3500"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:text="3500 Kkl"
+                    android:textColor="@android:color/white"
+                    android:drawableTop="@mipmap/sandwitch"
+                    android:background="@drawable/circel_3500"
+                    android:padding="20dp"/>
+
+                <Button
+                    android:id="@+id/kkl_4100"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:text="4100 Kkl"
+                    android:drawableTop="@mipmap/salad"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/circel_4100"
+                    android:padding="20dp"
+                    android:layout_marginBottom="10dp"/>
             </LinearLayout>
-            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip">
-                <android.support.v7.widget.CardView android:id="@+id/menubantuan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_weight="1.0" app:cardCornerRadius="4.0dip" app:cardElevation="3.0dip">
-                    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content">
-                        <ImageView android:layout_gravity="center" android:id="@+id/card3" android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="@drawable/tiga" android:scaleType="fitXY" />
-                        <TextView android:textColor="@color/colorFont" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2475" />
-                    </LinearLayout>
-                </android.support.v7.widget.CardView>
-                <android.support.v7.widget.CardView android:id="@+id/keluar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_weight="1.0" app:cardCornerRadius="4.0dip" app:cardElevation="3.0dip">
-                    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content">
-                        <ImageView android:layout_gravity="center" android:id="@+id/card4" android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="@drawable/empat" android:scaleType="fitXY" />
-                        <TextView android:textColor="@color/colorFont" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2675" />
-                    </LinearLayout>
-                </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/kkl_3200"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:text="3200 Kkl"
+                    android:textColor="@android:color/white"
+                    android:drawableTop="@mipmap/havermunt"
+                    android:background="@drawable/circel_3200"
+                    android:padding="20dp"/>
+
+                <Button
+                    android:id="@+id/kkl_3800"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:text="3800 Kkl"
+                    android:textColor="@android:color/white"
+                    android:drawableTop="@mipmap/udang"
+                    android:background="@drawable/circel_3800"
+                    android:padding="20dp"/>
+
             </LinearLayout>
+
         </LinearLayout>
-    </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
 </LinearLayout>

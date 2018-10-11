@@ -70,21 +70,21 @@ public class DB_menu2_2125_ts {
             Bitmap bitmap = ((BitmapDrawable)getResources().getDrawable(R.drawable.gambar1)).getBitmap();
             bitmap.compress(Bitmap.CompressFormat.PNG, 100, baos);
             byte[] photo = baos.toByteArray();*/
-            String sql = "create table employment_data2(id int(3) primary key, waktu varchar(50) null, menu varchar(50) null, bahan varchar(50) null, urt varchar(50) null, berat varchar(50) null, energi varchar(50) null, protein varchar(50) null, lemak varchar(50) null, karbohidrat varchar(50) null);";
+            String sql = "create table employment_data(id int(3) primary key, waktu varchar(50) null, menu varchar(50) null, bahan varchar(50) null, urt varchar(50) null, berat varchar(50) null, energi varchar(50) null, protein varchar(50) null, lemak varchar(50) null, karbohidrat varchar(50) null);";
             Log.d("Data", "onCreate: " + sql);
             db.execSQL(sql);
-            db.execSQL("INSERT INTO employment_data2(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('1', '09.00', 'NASI', 'Nasi Putih', '1,5 Centong Datar', '150', '262,5', '6', '0', '60');");
-            db.execSQL("INSERT INTO employment_data2(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('2', '', 'PERKEDEL', 'Kentang', '1 biji sedang', '105', '87,5', '2', '0', '20');");
-            db.execSQL("INSERT INTO employment_data2(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('3', '', '', 'Telur ayam', '1/2 butir', '27,5', '37,5', '3,5', '2,5', '0');");
-            db.execSQL("INSERT INTO employment_data2(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('4', '', '', 'Minyak', '1 sendok teh', '5', '50', '0', '5', '0');");
-            db.execSQL("INSERT INTO employment_data2(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('5', '', 'CAPCAY', 'Wortel', '1/2 gelas', '50', '12,5', '0,5', '0', '2,5');");
-            db.execSQL("INSERT INTO employment_data2(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('6', '', '', 'Sawi', '1/2 gelas', '50', '12,5', '0,5', '0', '2,5');");
-            db.execSQL("INSERT INTO employment_data2(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('7', '', '', 'Bakso', '5 biji', '85', '37,5', '3,5', '2,5', '0');");
-            db.execSQL("INSERT INTO employment_data2(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('4', '', '', 'Minyak', '1 sendok teh', '5', '50', '0', '5', '0');");
-            db.execSQL("INSERT INTO employment_data2(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('8', '', 'SUSU KEDELAI', 'Susu kedelai bubuk', '2 sendok makan', '25', '75', '5', '3', '7');");
-            db.execSQL("INSERT INTO employment_data2(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('4', '', '', 'Gula', '1 sendok makan', '13', '50', '0', '0', '0');");
-            db.execSQL("INSERT INTO employment_data2(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('9', '', 'AIR MINERAL', 'Air mineral', '1 gelas', '200 ml', '0', '0', '0', '12');");
-            db.execSQL("INSERT INTO employment_data2(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('10', '', '', '', '', '', '675', '21', '18', '104');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('1', '06.00', 'NASI', 'Nasi Putih', '1,5 Centong Datar', '150', '262,5', '6', '0', '60');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('2', '', 'PERKEDEL', 'Kentang', '1 biji sedang', '105', '87,5', '2', '0', '20');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('3', '', '', 'Telur ayam', '1/2 butir', '27,5', '37,5', '3,5', '2,5', '0');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('4', '', '', 'Minyak', '1 sendok teh', '5', '50', '0', '5', '0');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('5', '', 'CAPCAY', 'Wortel', '1/2 gelas', '50', '12,5', '0,5', '0', '2,5');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('6', '', '', 'Sawi', '1/2 gelas', '50', '12,5', '0,5', '0', '2,5');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('7', '', '', 'Bakso', '5 biji', '85', '37,5', '3,5', '2,5', '0');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('4', '', '', 'Minyak', '1 sendok teh', '5', '50', '0', '5', '0');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('8', '', 'SUSU KEDELAI', 'Susu kedelai bubuk', '2 sendok makan', '25', '75', '5', '3', '7');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('4', '', '', 'Gula', '1 sendok makan', '13', '50', '0', '0', '0');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('9', '', 'AIR MINERAL', 'Air mineral', '1 gelas', '200 ml', '0', '0', '0', '12');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('10', '', '', '', '', '', '675', '21', '18', '104');");
 //            db.execSQL(CREATE_TABLE);
 //            sql = "INSERT INTO nitrogen (id, rendah, sedang, tinggi, sangat_tinggi) VALUES (" + img + " , '75', '100', '125','150');";
 //            db.execSQL(sql);
@@ -134,7 +134,7 @@ public class DB_menu2_2125_ts {
         }
     }
     //membuat array pada table layout
-    public ArrayList<ArrayList<Object>> ambilSemuaBaris2() {
+    public ArrayList<ArrayList<Object>> ambilSemuaBaris() {
         ArrayList<ArrayList<Object>> dataArray = new ArrayList<ArrayList<Object>>();
         Cursor cur;
         /*byte[] photo=cursor.getBlob(index of blob cloumn);

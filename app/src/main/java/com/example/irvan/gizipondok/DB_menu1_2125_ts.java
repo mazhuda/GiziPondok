@@ -57,19 +57,7 @@ public class DB_menu1_2125_ts {
         @Override
         public void onCreate(SQLiteDatabase db) {
             // TODO Auto-generated method stub
-           /* String sql;
-            Bitmap bitmap= BitmapFactory.decodeResource(Resources.getSystem(), R.drawable.gambar1);
 
-            ByteArrayOutputStream bos=new ByteArrayOutputStream();
-
-            bitmap.compress(Bitmap.CompressFormat.PNG, 100, bos);
-
-            byte[] img=bos.toByteArray();*/
-
-            /*ByteArrayOutputStream baos = new ByteArrayOutputStream();
-            Bitmap bitmap = ((BitmapDrawable)getResources().getDrawable(R.drawable.gambar1)).getBitmap();
-            bitmap.compress(Bitmap.CompressFormat.PNG, 100, baos);
-            byte[] photo = baos.toByteArray();*/
             String sql = "create table employment_data(id int(3) primary key, waktu varchar(50) null, menu varchar(50) null, bahan varchar(50) null, urt varchar(50) null, berat varchar(50) null, energi varchar(50) null, protein varchar(50) null, lemak varchar(50) null, karbohidrat varchar(50) null);";
             Log.d("Data", "onCreate: " + sql);
             db.execSQL(sql);
@@ -83,13 +71,16 @@ public class DB_menu1_2125_ts {
             db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('8', '', 'BUAH SALAK', 'Salak', '2 buah sedang', '65', '50', '0', '0', '12');");
             db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('9', '', 'AIR MINERAL', 'Air mineral', '1 gelas', '200 ml', '0', '0', '0', '0');");
             db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('10', '', '', '', '', '', '562,5', '19', '15', '84');");
-//            db.execSQL(CREATE_TABLE);
-//            sql = "INSERT INTO nitrogen (id, rendah, sedang, tinggi, sangat_tinggi) VALUES (" + img + " , '75', '100', '125','150');";
-//            db.execSQL(sql);
-//            sql = "INSERT INTO nitrogen (id, rendah, sedang, tinggi, sangat_tinggi) VALUES (R.drawable.gambar2, '50', '75', '100','125');";
-//            db.execSQL(sql);
-//            sql = "INSERT INTO nitrogen (id, rendah, sedang, tinggi, sangat_tinggi) VALUES (R.drawable.gambar3, '0', '50', '50','50');";
-//            db.execSQL(sql);
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('11', '09.00', 'NASI', 'Nasi Putih', '1,5 Centong Datar', '150', '262,5', '6', '0', '60');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('12', '', 'PEPES IKAN', 'Ikan', '1 potong sedang', '40', '50', '7', '2', '0');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('13', '', 'TAHU BUMBU BALADO', 'Tahu', '1 biji besar', '110', '75', '5', '3', '7');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('14', '', '', 'Minyak', '1 sendok teh', '5', '50', '0', '5', '0');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('15', '', 'SAYUR LODEH', 'Terong', '1/2 gelas', '50', '12,5', '0,5', '0', '2,5');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('16', '', '', 'Kacang panjang', '1/2 gelas', '50', '12,5', '0,5', '0', '2,5');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('17', '', '', 'Santan', '1/3 gelas', '40', '50', '0', '5', '0');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('18', '', 'BUAH SALAK', 'Salak', '2 buah sedang', '65', '50', '0', '0', '12');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('19', '', 'AIR MINERAL', 'Air mineral', '1 gelas', '200 ml', '0', '0', '0', '0');");
+            db.execSQL("INSERT INTO employment_data(id, waktu, menu, bahan, urt, berat, energi, protein, lemak, karbohidrat) VALUES ('20', '', '', '', '', '', '562,5', '19', '15', '84');");
         }
         //memperbarui database bila sudah ada
         @Override
@@ -106,10 +97,6 @@ public class DB_menu1_2125_ts {
     }
     //menambahkan pada row
     public void addRow(String waktu, String menu, String bahan, String urt, String berat, String energi, String protein, String lemak, String karbohidrat) {
-        // Convert the image into byte array
-        /*ByteArrayOutputStream out = new ByteArrayOutputStream();
-        photo.compress(Bitmap.CompressFormat.PNG, 100, out);
-        byte[] buffer=out.toByteArray();*/
         ContentValues values = new ContentValues();
         values.put(ROW_WAKTU, waktu);
         values.put(ROW_MENU, menu);
@@ -135,10 +122,6 @@ public class DB_menu1_2125_ts {
     public ArrayList<ArrayList<Object>> ambilSemuaBaris() {
         ArrayList<ArrayList<Object>> dataArray = new ArrayList<ArrayList<Object>>();
         Cursor cur;
-        /*byte[] photo=cursor.getBlob(index of blob cloumn);
-        ByteArrayInputStream imageStream = new ByteArrayInputStream(photo);
-        Bitmap bitmap= BitmapFactory.decodeStream(imageStream);*/
-        //getBitmap().compress(Bitmap.CompressFormat.PNG, 100, out);
         try {
             cur = db.query(NAMA_TABEL,
                     new String[] { ROW_ID, ROW_WAKTU, ROW_MENU, ROW_BAHAN, ROW_URT, ROW_BERAT, ROW_ENERGI, ROW_PROTEIN, ROW_LEMAK, ROW_KARBOHIDRAT}, null, null,
@@ -157,7 +140,6 @@ public class DB_menu1_2125_ts {
                     dataList.add(cur.getString(7));
                     dataList.add(cur.getString(8));
                     dataList.add(cur.getString(9));
-
                     dataArray.add(dataList);
 
                 } while (cur.moveToNext());
@@ -171,9 +153,5 @@ public class DB_menu1_2125_ts {
         }
         return dataArray;
 
-    }
-
-    public static Bitmap getPhoto(byte[] image) {
-        return BitmapFactory.decodeByteArray(image, 0, image.length);
     }
 }

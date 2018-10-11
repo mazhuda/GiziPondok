@@ -35,14 +35,12 @@ public class menu_utama extends AppCompatActivity {
             }
         });
 
-        panduan.setOnClickListener(new View.OnClickListener() {
+       panduan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent c = new Intent(menu_utama.this, cetak.class);
+                Intent c = new Intent(menu_utama.this, cobbaa.class);
                 startActivity(c);
             }
         });
-
-
     }
 }

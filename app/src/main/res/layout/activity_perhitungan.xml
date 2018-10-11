@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/relatif"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -16,201 +16,232 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:padding="15dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/cell_shape"
-                android:orientation="vertical"
-                android:padding="6dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Perhitungan Rata Rata Umur"
-                    android:layout_gravity="center"
-                    android:textSize="18dp"
-                    android:textColor="#000"
-                    android:padding="3dp" />
-
-                <TextView
-                    android:layout_marginTop="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Jenis Kelamin"
-                    android:textSize="16dp"
-                    android:layout_gravity="center"/>
-
-                <RadioGroup
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:orientation="horizontal">
-                    <RadioButton
-                        android:id="@+id/L"
+                    android:background="@drawable/cell_shape"
+                    android:orientation="vertical"
+                    android:padding="6dp">
+
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:button="@drawable/ic_laki"/>
-                    <View
-                        android:layout_width="1dp"
-                        android:layout_height="50dp"
+                        android:text="Perhitungan Rata Rata Umur"
                         android:layout_gravity="center"
-                        android:background="#000000"></View>
-                    <RadioButton
-                        android:id="@+id/P"
+                        android:textSize="18dp"
+                        android:textColor="#000"
+                        android:padding="3dp"/>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:button="@drawable/ic_perempuan"/>
-                </RadioGroup>
+                        android:text="Jenis Kelamin"
+                        android:textSize="16dp"
+                        android:layout_gravity="center"/>
 
-            </LinearLayout>
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/L"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/ic_laki"/>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="#000000"></View>
+                        <RadioButton
+                            android:id="@+id/P"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/ic_perempuan"/>
+                    </RadioGroup>
 
-            <LinearLayout
-                android:id="@+id/linier1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/cell_shape"
-                android:orientation="vertical"
-                android:padding="6dp">
+                </LinearLayout>
 
-                <TextView
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cell_shape"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Input Usia"
-                    android:textSize="13dp"
-                    android:textColor="#4b898f"/>
+                    android:layout_gravity="center"
+                    android:text="Masukan Jumlah Satri"
+                    android:textSize="16dp"
+                    android:textColor="#4b898f"
+                    android:layout_marginBottom="10dp"/>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-
-                    android:gravity="center">
-                    <TextView
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="20dp"
-                        android:text="13 Thn"/>
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
 
-                    <EditText
-                        android:id="@+id/usia1"
-                        android:layout_width="100dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_height="wrap_content"
-                        android:inputType="number"
-                        android:maxLength="4"
-                        android:textAlignment="textEnd"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="130dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColorHint="#232323">
+
+                                    <EditText
+                                        android:id="@+id/usia1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:hint="Usia 13 Tahun"
+                                        android:textSize="15dp"
+                                        android:maxLength="4"
+                                        android:inputType="number" />
+
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="130dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColorHint="#232323">
+
+                                    <EditText
+                                        android:id="@+id/usia2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:hint="Usia 14 Tahun"
+                                        android:textSize="15dp"
+                                        android:maxLength="4"
+                                        android:inputType="number" />
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="130dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColorHint="#232323">
+
+                                    <EditText
+                                        android:id="@+id/usia3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:hint="Usia 15 Tahun"
+                                        android:textSize="15dp"
+                                        android:maxLength="4"
+                                        android:inputType="number" />
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="130dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColorHint="#232323">
+
+                                    <EditText
+                                        android:id="@+id/usia4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:hint="Usia 16 Tahun"
+                                        android:textSize="15dp"
+                                        android:maxLength="4"
+                                        android:inputType="number" />
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="130dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColorHint="#232323">
+
+                                    <EditText
+                                        android:id="@+id/usia5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:hint="Usia 17 Tahun"
+                                        android:textSize="15dp"
+                                        android:maxLength="4"
+                                        android:inputType="number" />
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="130dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColorHint="#232323">
+
+                                    <EditText
+                                        android:id="@+id/usia6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:hint="Usia 18 Tahun"
+                                        android:textSize="15dp"
+                                        android:maxLength="4"
+                                        android:inputType="number" />
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
                 </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="20dp"
-                        android:text="14 Thn"/>
-
-                    <EditText
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/usia2"
-                        android:layout_marginLeft="20dp"
-                        android:inputType="number"
-                        android:maxLength="4"
-                        android:text=""
-                        android:textAlignment="textEnd" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_marginRight="20dp"
-                        android:layout_height="wrap_content"
-                        android:text="15 Thn"/>
-
-                    <EditText
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/usia3"
-                        android:layout_marginLeft="20dp"
-                        android:inputType="number"
-                        android:maxLength="4"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="20dp"
-                        android:text="16 Thn"/>
-
-                    <EditText
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/usia4"
-                        android:layout_marginLeft="20dp"
-                        android:inputType="number"
-                        android:maxLength="4"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="20dp"
-                        android:text="17 Thn"/>
-
-                    <EditText
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/usia5"
-                        android:layout_marginLeft="20dp"
-                        android:inputType="number"
-                        android:maxLength="4"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="20dp"
-                        android:text="18 Thn"/>
-
-                    <EditText
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/usia6"
-                        android:layout_marginLeft="20dp"
-                        android:inputType="number"
-                        android:maxLength="4"/>
-                </LinearLayout>
-
-                <Button
-                    android:id="@+id/hitung"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:text="Hitung"
-                    android:textAllCaps="false"
-                    android:layout_gravity="center"/>
-
-
-
-            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -238,7 +269,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/rata_rata"
+                        android:id="@+id/rata-rata"
                         android:layout_width="150dp"
                         android:layout_height="50dp"
                         android:layout_marginBottom="0.5dp"
@@ -281,15 +312,32 @@
                     />
                 </LinearLayout>
             </LinearLayout>
-            <Button
-                android:id="@+id/menu"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:text="Tampil Menu"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/hitung"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hitung"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"/>
+                <Button
+                    android:id="@+id/menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Tampil Menu"
+
+                    android:layout_gravity="center"
+                    />
                 android:theme="@style/PrimaryColoredButton"
-                android:layout_gravity="center"
-                />
+
+            </LinearLayout>
+
             //Hide
 
             <TextView
@@ -307,4 +355,4 @@
 
     </ScrollView>
 
-</FrameLayout>
+</RelativeLayout>
