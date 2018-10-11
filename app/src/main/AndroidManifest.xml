@@ -28,10 +28,6 @@
             android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".coba"
-            android:label="Panduan"
-            android:theme="@style/AppTheme.ActionBar" />
-        <activity
             android:name=".cobbaa"
             android:label="Panduan"
             android:theme="@style/AppTheme.ActionBar" />

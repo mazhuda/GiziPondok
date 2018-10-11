@@ -101,7 +101,7 @@ public class menu2_2125_ts extends AppCompatActivity {
         rvSensor.setItemAnimator(new DefaultItemAnimator());
         rvSensor.setAdapter(mSensorAdapter);
         mSensorAdapter.notifyDataSetChanged();
-        ArrayList<ArrayList<Object>> data = dm2.ambilSemuaBaris2();//
+        ArrayList<ArrayList<Object>> data = dm2.ambilSemuaBaris();//
 
         for (int posisi = 0; posisi < data.size(); posisi++) {
 

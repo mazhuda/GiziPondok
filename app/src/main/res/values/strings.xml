@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Gizi Pondok</string>
+    <string-array name="pilih_menu">
+        <item>Menu_1</item>
+        <item>Menu_2</item>
+        <item>Menu_3</item>
+        <item>Menu_4</item>
+    </string-array>
 </resources>
